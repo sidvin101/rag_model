@@ -13,7 +13,7 @@ import streamlit as st
 load_dotenv()
 
 #index_host = os.getenv("PINECONE_INDEX_HOST")
-index_host = st.secrets["PINECONE_INDEX_HOST")
+index_host = st.secrets["PINECONE_INDEX_HOST"]
 #pinecone_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_api_key = st.secrets["PINECONE_API_KEY"]
 #openai_api_key = os.getenv("OPENAI_API_KEY")

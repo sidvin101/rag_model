@@ -12,9 +12,12 @@ import streamlit as st
 #Load enviroment variables
 load_dotenv()
 
-index_host = os.getenv("PINECONE_INDEX_HOST")
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
-openai_api_key = os.getenv("OPENAI_API_KEY")
+#index_host = os.getenv("PINECONE_INDEX_HOST")
+index_host = st.secrets["PINECONE_INDEX_HOST")
+#pinecone_api_key = os.getenv("PINECONE_API_KEY")
+pinecone_api_key = st.secrets["PINECONE_API_KEY"]
+#openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # Initialize Pinecone
 pc = Pinecone(api_key = pinecone_api_key)
